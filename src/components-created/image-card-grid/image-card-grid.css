@@ -1,0 +1,78 @@
+.fw-image-card__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 40px;
+}
+.fw-image-card {
+  max-height: 250px;
+  min-height: 220px;
+  width: 100%;
+  border-radius: 32px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  padding: 30px;
+  cursor: pointer;
+}
+
+.fw-image-card:hover .fw-image-card__bg-image {
+  transform: scale(1.1);
+  transition: transform 1.5s ease;
+}
+
+.fw-image-card:hover .fw-image-card__content {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.fw-image-card__bg-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.fw-image-card__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 66%;
+  z-index: 1;
+}
+
+.fw-image-card__topline {
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 1;
+}
+.fw-image-card__title {
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.fw-image-card__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1000px;
+  padding: 12px 24px;
+  font-weight: 600;
+  margin-top: 10px;
+  width: max-content;
+}
+
+.fw-image-card__button.light {
+  background-color: #ffffff;
+  color: var(--zen-text-color);
+}
+
+.fw-image-card__button.primary {
+  background-color: var(--zen-color-brand-primary);
+  color: #ffffff;
+}

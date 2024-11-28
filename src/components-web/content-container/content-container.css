@@ -1,7 +1,10 @@
 .fw-content-container {
   width: 100%;
   max-width: var(--max-width);
-  padding: 20px 16px;
+  padding: 30px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 .fw-content-container__headline {
