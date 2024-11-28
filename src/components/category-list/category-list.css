@@ -1,0 +1,39 @@
+.fw-nav-card-column {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.fw-nav-card {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  border-radius: 4px;
+  background-color: white;
+  align-items: center;
+  padding: 6px;
+  text-decoration: none;
+}
+
+.fw-nav-card:hover .fw-nav-card-img {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+
+.fw-nav-card-img-wrapper {
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.fw-nav-card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.fw-nav-card-label {
+  font-size: 16px;
+  color: black;
+}
