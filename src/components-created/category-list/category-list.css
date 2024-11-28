@@ -15,6 +15,10 @@
   text-decoration: none;
 }
 
+.fw-nav-card:hover {
+  text-decoration: none !important;
+}
+
 .fw-nav-card:hover .fw-nav-card-img {
   transform: scale(1.1);
   transition: transform 0.8s ease;
