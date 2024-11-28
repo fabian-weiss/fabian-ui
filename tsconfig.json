@@ -27,7 +27,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/components/category-list"
+    "src/components-created/category-list"
   ],
   "exclude": ["node_modules"]
 }

@@ -1,0 +1,11 @@
+.fw-content-container {
+  width: 100%;
+  max-width: var(--max-width);
+  padding: 20px 16px;
+}
+
+.fw-content-container__headline {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
