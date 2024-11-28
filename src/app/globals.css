@@ -7,6 +7,77 @@
   --foreground: #ffffff;
   --text-primary: #ffffff;
   --text-secondary: #6b6b6b;
+
+  /** ZEN THEME */
+  --zen-viewport-width: calc(100vw - (100vw - 100%));
+  --zen-layout-container-width: 1400px;
+  --zen-layout-button-radius: 100px;
+  --zen-layout-input-radius: 100px;
+  --zen-layout-element-radius: 9px;
+  --zen-layout-container-spacing-top: 36px;
+  --zen-layout-container-spacing-right: 20px;
+  --zen-layout-container-spacing-bottom: 36px;
+  --zen-layout-container-spacing-left: 20px;
+  --zen-layout-offset-left: max(
+    var(--zen-layout-container-spacing-left),
+    calc(
+      (
+          var(--zen-viewport-width) - var(--zen-layout-container-width) -
+            var(--zen-scrollbar-width)
+        ) / 2 + var(--zen-layout-container-spacing-left)
+    )
+  );
+  --zen-layout-offset-right: max(
+    var(--zen-layout-container-spacing-right),
+    calc(
+      (
+          var(--zen-viewport-width) - var(--zen-layout-container-width) -
+            var(--zen-scrollbar-width)
+        ) / 2 + var(--zen-layout-container-spacing-right)
+    )
+  );
+  --zen-layout-container-spacing-right-down-xs: 20px;
+  --zen-layout-container-spacing-left-down-xs: 20px;
+  --zen-layout-container-spacing-right-up-xs: 20px;
+  --zen-layout-container-spacing-left-up-xs: 20px;
+  --zen-color-brand-primary: #ec6225;
+  --zen-color-brand-secondary: #000000;
+  --zen-border-color: #f1f3f7;
+  --zen-background-color: #ffffff;
+  --zen-container-bg: transparent;
+  --zen-meta-theme-color: #ffffff;
+  --zen-text-color: #323e4a;
+  --zen-light-text-color: #ffffff;
+  --zen-headline-color: #323e4a;
+  --zen-light-headline-color: #ffffff;
+  --zen-color-price: #323e4a;
+  --zen-color-buy-button: #ce2f15;
+  --zen-color-buy-button-text: #ffffff;
+  --zen-gray-100: #f9f9fb;
+  --zen-gray-200: #e8ecf2;
+  --zen-gray-300: #dbe0eb;
+  --zen-gray-400: #c8d0df;
+  --zen-gray-500: #a1aec9;
+  --zen-gray-600: #556b95;
+  --zen-gray-700: #394865;
+  --zen-gray-800: #2b354b;
+  --zen-gray-900: #1c2331;
+  --zen-font-family-base: "Rubik", sans-serif;
+  --zen-font-family-headline: "Rubik", sans-serif;
+  --zen-font-size-scale: 4vw;
+  --zen-font-size-min: 0.5rem;
+  --zen-font-size-max: 0.875rem;
+  --zen-font-size-base: 0.875rem;
+  --zen-h1-font-size: 36px;
+  --zen-h2-font-size: 28px;
+  --zen-h3-font-size: 24px;
+  --zen-h4-font-size: 20px;
+  --zen-h5-font-size: 16px;
+  --zen-h6-font-size: 14px;
+  --zen-font-weight-base: 400;
+  --zen-headings-font-weight: 400;
+  --zen-theme: "gravity";
+  --zen-version: "v4.6.1";
 }
 
 /* @media (prefers-color-scheme: dark) {
