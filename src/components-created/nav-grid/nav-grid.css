@@ -11,9 +11,9 @@
   border-radius: 10px;
   background-color: white;
   align-items: center;
-  padding: 6px;
+  padding: 8px;
   text-decoration: none;
-  height: 120px;
+  height: 116px;
 }
 
 .fw-nav-grid__item:hover {
