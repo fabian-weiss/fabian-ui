@@ -55,34 +55,6 @@
   margin-bottom: 20px;
 }
 
-.fw-image-gallery-entry__button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 1000px;
-  padding: 12px 24px;
-  font-weight: 600;
-  margin-top: 10px;
-  width: max-content;
-  cursor: pointer;
-  transition: scale 0.3s ease;
-}
-
-.fw-image-gallery-entry__button:hover {
-  transform: scale(1.05);
-  text-decoration: none;
-}
-
-.fw-image-gallery-entry__button.light {
-  background-color: #ffffff;
-  color: var(--zen-text-color);
-}
-
-.fw-image-gallery-entry__button.primary {
-  background-color: var(--zen-color-brand-primary);
-  color: #ffffff;
-}
-
 .fw-image-gallery-indicators {
   position: absolute;
   right: 20px;

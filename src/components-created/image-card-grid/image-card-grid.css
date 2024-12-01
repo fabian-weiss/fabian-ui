@@ -77,37 +77,3 @@
   color: inherit;
   font-weight: 700;
 }
-
-.fw-image-card__button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 1000px;
-  padding: 12px 24px;
-  font-weight: 600;
-  margin-top: 10px;
-  width: max-content;
-  transition: all 0.2s ease;
-}
-
-.fw-image-card__button:hover {
-  text-decoration: none;
-}
-
-.fw-image-card__button.light {
-  background-color: #ffffff;
-  color: var(--zen-text-color);
-}
-
-.fw-image-card__button.light:hover {
-  box-shadow: 0 0 0 2px #ffffff;
-}
-
-.fw-image-card__button.primary {
-  background-color: var(--zen-color-brand-primary);
-  color: #ffffff;
-}
-
-.fw-image-card__button.primary:hover {
-  box-shadow: 0 0 0 2px var(--zen-color-brand-primary);
-}

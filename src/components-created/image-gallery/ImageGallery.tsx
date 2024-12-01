@@ -61,7 +61,7 @@ function ImageGallery() {
           <div className="fw-image-gallery-entry__content-wrapper">
             <span className="fw-image-gallery-entry__topline">Hunde</span>
             <h4 className="fw-image-gallery-entry__title">Leckerlis</h4>
-            <a href="#" className="fw-image-gallery-entry__button light">
+            <a href="#" className="fw-btn fw-btn-light">
               Jetzt entdecken
             </a>
           </div>
@@ -75,7 +75,7 @@ function ImageGallery() {
           <div className="fw-image-gallery-entry__content-wrapper">
             <span className="fw-image-gallery-entry__topline">Katzen</span>
             <h4 className="fw-image-gallery-entry__title">Belohnungen</h4>
-            <a href="#" className="fw-image-gallery-entry__button light">
+            <a href="#" className="fw-btn fw-btn-light">
               Jetzt ansehen
             </a>
           </div>

@@ -1,0 +1,33 @@
+.fw-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1000px;
+  padding: 12px 24px;
+  font-weight: 600;
+  margin-top: 10px;
+  width: max-content;
+  transition: all 0.2s ease;
+}
+
+.fw-btn:hover {
+  text-decoration: none;
+}
+
+.fw-btn.fw-btn-light {
+  background-color: #ffffff;
+  color: var(--zen-text-color);
+}
+
+.fw-btn.fw-btn-light:hover {
+  box-shadow: 0 0 0 2px #ffffff;
+}
+
+.fw-btn.fw-btn-primary {
+  background-color: var(--zen-color-brand-primary);
+  color: #ffffff;
+}
+
+.fw-btn.fw-btn-primary:hover {
+  box-shadow: 0 0 0 2px var(--zen-color-brand-primary);
+}

@@ -1,0 +1,82 @@
+.fw-cta-banner-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 36px;
+  overflow: hidden;
+}
+
+.fw-cta-banner-img {
+  width: 100%;
+  min-height: 630px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fw-cta-banner-container:hover .fw-cta-banner-img {
+  transform: scale(1.1);
+  transition: transform 0.8s ease;
+}
+
+.fw-cta-banner-content-wrapper {
+  position: absolute;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 50%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.fw-cta-banner-content-wrapper.fw-glas-backdrop {
+  /* Glass effect */
+  background: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* Light frosted background with transparency */
+  backdrop-filter: blur(
+    10px
+  ); /* Applies the blur effect to the content behind */
+  -webkit-backdrop-filter: blur(10px); /* For Safari support */
+}
+
+.fw-cta-banner-content-wrapper.fw-top {
+  top: 20px;
+}
+
+.fw-cta-banner-content-wrapper.fw-center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fw-cta-banner-content-wrapper.fw-bottom {
+  bottom: 20px;
+}
+
+.fw-cta-banner-content-wrapper.fw-text-dark {
+  color: var(--zen-text-color) !important;
+}
+
+.fw-cta-banner-badge {
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 1000px;
+  padding: 2px 6px;
+  background: var(--zen-color-brand-primary);
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.fw-cta-banner-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}

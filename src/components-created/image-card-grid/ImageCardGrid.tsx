@@ -14,7 +14,7 @@ function ImageCardGrid() {
         <div className="fw-image-card__content text-light">
           <span className="fw-image-card__topline">Hunde</span>
           <h4 className="fw-image-card__title">Leckerlis</h4>
-          <div className="fw-image-card__button light">Jetzt entdecken</div>
+          <div className="fw-btn fw-btn-light">Jetzt entdecken</div>
         </div>
       </div>
       <div className="fw-image-card flex-start">
@@ -26,7 +26,7 @@ function ImageCardGrid() {
         <div className="fw-image-card__content text-dark">
           <span className="fw-image-card__topline">Katzen</span>
           <h4 className="fw-image-card__title">Belohnungen</h4>
-          <div className="fw-image-card__button light">Jetzt entdecken</div>
+          <div className="fw-btn fw-btn-light">Jetzt entdecken</div>
         </div>
       </div>
       <div className="fw-image-card flex-end">
@@ -38,7 +38,7 @@ function ImageCardGrid() {
         <div className="fw-image-card__content text-light">
           <span className="fw-image-card__topline">Hunde</span>
           <h4 className="fw-image-card__title">Experten Ernährung</h4>
-          <div className="fw-image-card__button primary">Jetzt entdecken</div>
+          <div className="fw-btn fw-btn-primary">Jetzt entdecken</div>
         </div>
       </div>
       <div className="fw-image-card hover-opacity">
@@ -50,7 +50,7 @@ function ImageCardGrid() {
         <div className="fw-image-card__content text-light">
           <span className="fw-image-card__topline">Hunde</span>
           <h4 className="fw-image-card__title">Experten Ernährung</h4>
-          <div className="fw-image-card__button primary">Jetzt entdecken</div>
+          <div className="fw-btn fw-btn-primary">Jetzt entdecken</div>
         </div>
       </div>
     </div>
