@@ -1,0 +1,110 @@
+.fw-image-gallery-container {
+  width: 100%;
+  height: 630px;
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+}
+
+.fw-image-gallery-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.fw-image-gallery-entry {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fw-image-gallery-entry__img {
+  width: 100%;
+  height: 630px;
+  object-fit: cover;
+}
+
+.fw-image-gallery-entry__content-wrapper {
+  position: absolute;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  top: 100%;
+  opacity: 0;
+  max-width: 60%;
+  transform: translateY(-50%);
+  right: 100px;
+  animation: fade-in 0.5s ease-in-out forwards;
+  animation-delay: 0.4s;
+}
+
+.fw-image-gallery-entry__topline {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.fw-image-gallery-entry__title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.fw-image-gallery-entry__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1000px;
+  padding: 12px 24px;
+  font-weight: 600;
+  margin-top: 10px;
+  width: max-content;
+  cursor: pointer;
+}
+
+.fw-image-gallery-entry__button.light {
+  background-color: #ffffff;
+  color: var(--zen-text-color);
+}
+
+.fw-image-gallery-entry__button.primary {
+  background-color: var(--zen-color-brand-primary);
+  color: #ffffff;
+}
+
+.fw-image-gallery-indicators {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.fw-image-gallery-indicator {
+  width: 30px;
+  height: 6px;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 1000px;
+  cursor: pointer;
+}
+
+.fw-image-gallery-indicator.active {
+  background: #fff;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    top: 100%;
+  }
+  to {
+    opacity: 1;
+    top: 50%;
+  }
+}

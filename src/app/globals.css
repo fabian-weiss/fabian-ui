@@ -92,3 +92,9 @@ body {
   background: var(--background);
   font-family: var(--font-geist-sans);
 }
+
+/** OTHER GLOBALS */
+/* Layout */
+.fw-w50 {
+  width: 50%;
+}

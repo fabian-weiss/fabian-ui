@@ -1,5 +1,6 @@
 import CategoryList from "@/components-created/category-list/CategoryList";
 import ImageCardGrid from "@/components-created/image-card-grid/ImageCardGrid";
+import ImageGallery from "@/components-created/image-gallery/ImageGallery";
 import NavGrid from "@/components-created/nav-grid/NavGrid";
 import SectionContainer from "@/components-web/section-container/SectionContainer";
 import WrapperContainer from "@/components-web/wrapper-container/WrapperContainer";
@@ -17,6 +18,9 @@ function Home() {
         </WrapperContainer>
         <WrapperContainer widgetName="Image Card">
           <ImageCardGrid />
+        </WrapperContainer>
+        <WrapperContainer className="fw-w-50" widgetName="Image Gallery">
+          <ImageGallery />
         </WrapperContainer>
       </SectionContainer>
     </>
