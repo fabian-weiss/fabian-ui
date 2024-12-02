@@ -1,5 +1,5 @@
 @media (max-width: 768px) {
   .fw-mobile-hidden {
-    display: none;
+    display: none !important;
   }
 }
