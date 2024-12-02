@@ -12,6 +12,7 @@
   display: flex;
   overflow-x: auto;
   gap: 40px;
+  scroll-snap-type: x mandatory; /* Horizontal snap */
   /* padding: 20px 0; */
   /* position: relative; */
 }
@@ -30,6 +31,7 @@
 .fw-image-card-slider-entry {
   max-height: 250px;
   min-height: 220px;
+  scroll-snap-align: start;
   /* width: 100%; */
   /* width: 700px; */
   min-width: calc((100% - 80px) / 3);
