@@ -12,6 +12,7 @@
   background-color: white;
   align-items: center;
   padding: 6px;
+  padding-right: 30px;
   text-decoration: none;
   position: relative;
   transition: all 0.1s ease;
@@ -48,7 +49,6 @@
 .fw-nav-card-label {
   font-size: var(--zen-h5-font-size);
   color: var(--zen-text-color);
-  padding-right: 30px;
   text-decoration: none;
 }
 
