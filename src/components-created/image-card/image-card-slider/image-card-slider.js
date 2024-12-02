@@ -104,6 +104,8 @@ document.addEventListener("DOMContentLoaded", () => {
     "fw-image-card-slider-1",
     "fw-image-card-slider-container-1",
     "fw-image-card-slider-2",
-    "fw-image-card-slider-container-2"
+    "fw-image-card-slider-container-2",
+    "fw-image-card-slider-3",
+    "fw-image-card-slider-container-3"
   );
 });
