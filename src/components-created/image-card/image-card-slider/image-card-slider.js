@@ -65,6 +65,10 @@ function initializeImageCardSlider(sliderId, sliderContainerId) {
   // Start the interval for auto-scrolling
   resetInterval();
 
+  window.addEventListener("scroll", () => {
+    resetInterval();
+  });
+
   // Cleanup when the page is unloaded or when needed
   window.addEventListener("beforeunload", () => {
     if (intervalRef) {
