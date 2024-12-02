@@ -12,7 +12,6 @@
   background-color: white;
   align-items: center;
   padding: 6px;
-  padding-right: 30px;
   text-decoration: none;
   position: relative;
   transition: all 0.1s ease;
@@ -29,7 +28,7 @@
 }
 
 .fw-nav-card:hover .fw-chevron-right {
-  right: 20px;
+  right: 8px;
   opacity: 1;
 }
 
@@ -50,11 +49,12 @@
   font-size: var(--zen-h5-font-size);
   color: var(--zen-text-color);
   text-decoration: none;
+  padding-right: 30px;
 }
 
 .fw-chevron-right {
   position: absolute;
-  right: 10px;
+  right: 2px;
   opacity: 0;
   color: var(--zen-text-color);
   height: 16px;
