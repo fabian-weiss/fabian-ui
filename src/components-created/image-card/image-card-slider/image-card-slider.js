@@ -7,8 +7,8 @@ function initializeImageCardSlider(sliderId, sliderContainerId) {
     return;
   }
 
-  const prevButton = sliderContainer.querySelector(`#prev-btn`);
-  const nextButton = sliderContainer.querySelector("#next-btn");
+  const prevButton = sliderContainer.querySelector(`.fw-slider-btn.prev`);
+  const nextButton = sliderContainer.querySelector(".fw-slider-btn.next");
 
   // Function to get the number of visible slides based on the screen width
   const visibleSlides = () => {
