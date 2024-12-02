@@ -29,19 +29,19 @@
 }
 
 .fw-image-card-slider-entry {
-  max-height: 250px;
-  min-height: 220px;
+  /* max-height: 250px;
+  min-height: 220px; */
   scroll-snap-align: start;
   /* width: 100%; */
   /* width: 700px; */
   min-width: calc((100% - 80px) / 3);
-  border-radius: 36px;
+  /* border-radius: 36px;
   overflow: hidden;
   position: relative;
   display: flex;
   justify-content: flex-end;
   padding: 30px;
-  cursor: pointer;
+  cursor: pointer; */
 }
 
 .fw-slider-btn-wrapper {
