@@ -7,6 +7,7 @@
   --foreground: #ffffff;
   --text-primary: #ffffff;
   --text-secondary: #6b6b6b;
+  --max-width: 1600px;
 
   /** ZEN THEME */
   --zen-viewport-width: calc(100vw - (100vw - 100%));

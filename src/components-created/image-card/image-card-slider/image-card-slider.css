@@ -1,0 +1,112 @@
+/* .fw-image-card__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 40px;
+} */
+
+.fw-image-card-slider-container {
+  position: relative;
+}
+
+.fw-image-card-slider {
+  display: flex;
+  overflow-x: auto;
+  gap: 40px;
+  /* padding: 20px 0; */
+  /* position: relative; */
+}
+
+.fw-image-card-slider-container:hover .fw-slider-btn {
+  z-index: 1;
+  opacity: 1;
+}
+.fw-image-card-slider-container:hover .fw-slider-btn.next {
+  right: 20px;
+}
+.fw-image-card-slider-container:hover .fw-slider-btn.prev {
+  right: 70px;
+}
+
+.fw-image-card-slider-entry {
+  max-height: 250px;
+  min-height: 220px;
+  /* width: 100%; */
+  /* width: 700px; */
+  min-width: calc((100% - 80px) / 3);
+  border-radius: 36px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  padding: 30px;
+  cursor: pointer;
+}
+
+.fw-slider-btn-wrapper {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  display: flex;
+
+  gap: 40px;
+  z-index: -1;
+  transition: all 0.2s ease;
+}
+
+.fw-slider-btn {
+  position: absolute;
+  bottom: 10px;
+
+  height: 40px;
+  width: 40px;
+  padding: 10px;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  opacity: 0;
+}
+
+.fw-slider-btn:hover {
+  background-color: var(--zen-color-brand-primary);
+}
+
+.fw-slider-btn.next {
+  right: 0px;
+}
+
+.fw-slider-btn.prev {
+  transform: rotate(180deg);
+  right: 90px;
+}
+
+@media (max-width: 1100px) {
+  .fw-image-card-slider-entry {
+    min-width: calc((100% - 40px) / 2);
+  }
+}
+@media (max-width: 768px) {
+  .fw-image-card-slider-entry {
+    min-width: 100%;
+  }
+}
+
+/** Disable slider track bar */
+/* Hide scrollbar for WebKit browsers (Chrome, Safari, Edge) */
+.fw-image-card-slider::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.fw-image-card-slider {
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Ensure content still scrolls properly */
+.fw-image-card-slider {
+  -ms-overflow-style: none; /* Internet Explorer */
+  overflow-x: scroll;
+}

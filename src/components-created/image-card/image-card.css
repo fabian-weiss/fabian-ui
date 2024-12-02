@@ -1,9 +1,3 @@
-.fw-image-card__grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  gap: 40px;
-}
-
 .fw-image-card {
   max-height: 250px;
   min-height: 220px;
