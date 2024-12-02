@@ -1,6 +1,6 @@
 .fw-content-container {
   width: 100%;
-  max-width: var(--max-width);
+  /* max-width: var(--max-width); */
   padding: 30px 60px;
   display: flex;
   flex-direction: column;

@@ -21,13 +21,13 @@ function Home() {
         <WrapperContainer widgetName="Image Card">
           <ImageCardGrid />
         </WrapperContainer>
-        <WrapperContainer widgetName="Image Gallery">
+        <WrapperContainer className="fw-w75" widgetName="Image Gallery">
           <ImageGallery />
         </WrapperContainer>
-        <WrapperContainer className="fw-w50" widgetName="Image Gallery">
+        <WrapperContainer className="fw-w50" widgetName="CTA Banner">
           <CtaBanner />
         </WrapperContainer>
-        <WrapperContainer widgetName="Image Gallery">
+        <WrapperContainer widgetName="CTA Row">
           <CtaRow />
         </WrapperContainer>
       </SectionContainer>

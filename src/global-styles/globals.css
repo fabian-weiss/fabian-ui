@@ -95,6 +95,9 @@ body {
 
 /** OTHER GLOBALS */
 /* Layout */
+.fw-w75 {
+  width: 75%;
+}
 .fw-w50 {
   width: 50%;
 }
