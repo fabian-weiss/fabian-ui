@@ -1,12 +1,14 @@
-function initializeImageCardSlider(sliderId) {
+function initializeImageCardSlider(sliderId, sliderContainerId) {
+  const sliderContainer = document.getElementById(`${sliderContainerId}`);
   const slider = document.getElementById(`${sliderId}`);
+  var intervalRef = null;
   if (!slider) {
     console.error(`Slider with ID "${sliderId}" not found.`);
     return;
   }
 
-  const prevButton = slider.querySelector(".fw-slider-btn.prev");
-  const nextButton = slider.querySelector(".fw-slider-btn.next");
+  const prevButton = sliderContainer.querySelector(`#prev-btn`);
+  const nextButton = sliderContainer.querySelector("#next-btn");
 
   // Function to get the number of visible slides based on the screen width
   const visibleSlides = () => {
@@ -73,5 +75,9 @@ function initializeImageCardSlider(sliderId) {
 
 // Initialize a specific slider
 document.addEventListener("DOMContentLoaded", () => {
-  initializeImageCardSlider("fw-image-card-slider-1");
+  console.log("DOM Loaded");
+  initializeImageCardSlider(
+    "fw-image-card-slider-1",
+    "fw-image-card-slider-container-1"
+  );
 });
