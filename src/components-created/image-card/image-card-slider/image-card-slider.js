@@ -21,6 +21,18 @@ function initializeImageCardSlider(sliderId, sliderContainerId) {
     }
   };
 
+  // Function to handle if buttons should be visible or not
+  const handleButtonVisibility = () => {
+    const numberOfSliderChildren = slider.children.length;
+    if (numberOfSliderChildren <= visibleSlides()) {
+      prevButton.style.display = "none";
+      nextButton.style.display = "none";
+    } else {
+      prevButton.style.display = "flex";
+      nextButton.style.display = "flex";
+    }
+  };
+
   // Function to handle scroll (forward or backward)
   const handleScroll = (forward) => {
     if (slider) {
@@ -64,6 +76,14 @@ function initializeImageCardSlider(sliderId, sliderContainerId) {
 
   // Start the interval for auto-scrolling
   resetInterval();
+
+  // Handle visibility of buttons
+  handleButtonVisibility();
+
+  // Add event listener for window resize
+  window.addEventListener("resize", () => {
+    handleButtonVisibility();
+  });
 
   window.addEventListener("scroll", () => {
     resetInterval();
