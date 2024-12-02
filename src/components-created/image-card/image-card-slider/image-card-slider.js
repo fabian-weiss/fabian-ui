@@ -82,6 +82,8 @@ document.addEventListener("DOMContentLoaded", () => {
   console.log("DOM Loaded");
   initializeImageCardSlider(
     "fw-image-card-slider-1",
-    "fw-image-card-slider-container-1"
+    "fw-image-card-slider-container-1",
+    "fw-image-card-slider-2",
+    "fw-image-card-slider-container-2"
   );
 });
