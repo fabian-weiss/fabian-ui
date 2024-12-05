@@ -56,8 +56,8 @@
   color: #fff;
 }
 
-.fw-image-card__content.text-primary {
-  color: var(--zen-color-brand-primary);
+.fw-image-card__content.fw-text-primary {
+  color: var(--zen-color-brand-primary) !important;
 }
 
 .fw-image-card__content.text-dark {
