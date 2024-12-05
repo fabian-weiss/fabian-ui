@@ -56,6 +56,10 @@
   color: #fff;
 }
 
+.fw-image-card__content.text-primary {
+  color: var(--zen-color-brand-primary);
+}
+
 .fw-image-card__content.text-dark {
   color: var(--zen-text-color);
 }
