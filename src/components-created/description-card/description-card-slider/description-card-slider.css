@@ -52,6 +52,10 @@
   z-index: 10;
 }
 
+.fw-slider-btn-broad.hide {
+  display: none !important;
+}
+
 .fw-slider-btn-broad:hover {
   background-color: var(--zen-color-brand-primary);
 }
