@@ -24,10 +24,19 @@
   text-decoration: none;
   position: relative;
   transition: all 0.1s ease;
+  text-decoration: none;
+}
+
+.fw-nav-card:hover {
+  text-decoration: none;
 }
 
 .fw-nav-card.flex-center {
   justify-content: center;
+}
+
+.fw-nav-card.rounded {
+  border-radius: 36px;
 }
 
 .fw-nav-card.hover-border:hover {
