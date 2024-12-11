@@ -49,7 +49,7 @@ function initializeDescriptionCardSlider(sliderId, sliderContainerId) {
 
       resetInterval();
 
-      handleButtonVisibility();
+      // handleButtonVisibility();
 
       // If we are at the end, loop back to the start
       if (newIndex >= slider.children.length - visibleSlides()) {
@@ -68,7 +68,6 @@ function initializeDescriptionCardSlider(sliderId, sliderContainerId) {
 
       // Update button visibility after scrolling
       setTimeout(() => {
-        console.log(`Executed at: ${new Date().toISOString()}`);
         handleButtonVisibility();
       }, 300);
     }
