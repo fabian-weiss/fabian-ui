@@ -61,10 +61,22 @@
   overflow: hidden;
 }
 
+.fw-nav-card-img-wrapper.small {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
 .fw-nav-card-img {
   height: 100%;
   width: 100%;
+}
+
+.fw-nav-card-img.cover {
   object-fit: cover;
+}
+
+.fw-nav-card-img.contain {
+  object-fit: contain;
 }
 
 .fw-nav-card-label {
