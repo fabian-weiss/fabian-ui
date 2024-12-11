@@ -13,10 +13,10 @@
   opacity: 1;
 }
 .fw-description-card-slider-container:hover .fw-slider-btn-broad.next {
-  right: -20px;
+  right: -10px;
 }
 .fw-description-card-slider-container:hover .fw-slider-btn-broad.prev {
-  left: -20px;
+  left: -10px;
 }
 
 .fw-description-card-slider-entry {
@@ -57,13 +57,13 @@
 }
 
 .fw-slider-btn-broad.next {
-  right: -25px;
+  right: -15px;
   transform: translateY(50%);
 }
 
 .fw-slider-btn-broad.prev {
   transform: translateY(50%) rotate(180deg);
-  left: -25px;
+  left: -15px;
 }
 
 @media (max-width: 1100px) {

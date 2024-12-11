@@ -67,7 +67,10 @@ function initializeDescriptionCardSlider(sliderId, sliderContainerId) {
       });
 
       // Update button visibility after scrolling
-      setTimeout(handleButtonVisibility, 300); // Delay to allow smooth scrolling to finish
+      setTimeout(() => {
+        console.log(`Executed at: ${new Date().toISOString()}`);
+        handleButtonVisibility();
+      }, 300);
     }
   };
 
