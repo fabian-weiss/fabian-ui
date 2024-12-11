@@ -3,6 +3,7 @@ import CategoryList from "@/components-created/category-list/CategoryList";
 import CtaBanner from "@/components-created/cta-banner/CtaBanner";
 import CtaRow from "@/components-created/cta-row/CtaRow";
 import DescriptionCardSlider from "@/components-created/description-card/description-card-slider/DescriptionCardSlider";
+import IconTextGrid from "@/components-created/icon-text-grid/IconTextGrid";
 import ImageCardGrid from "@/components-created/image-card/image-card-grid/ImageCardGrid";
 import ImageGallery from "@/components-created/image-gallery/ImageGallery";
 import NavGrid from "@/components-created/nav-grid/NavGrid";
@@ -40,6 +41,9 @@ function Home() {
         </WrapperContainer>
         <WrapperContainer widgetName="Description Card Slider">
           <DescriptionCardSlider />
+        </WrapperContainer>
+        <WrapperContainer widgetName="Icon Text Grid">
+          <IconTextGrid />
         </WrapperContainer>
       </SectionContainer>
     </>

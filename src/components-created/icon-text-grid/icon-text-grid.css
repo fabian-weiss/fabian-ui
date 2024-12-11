@@ -1,0 +1,36 @@
+.fw-icon-text-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px 20px;
+}
+
+.fw-icon-text-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.fw-icon-text-image {
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
+}
+
+.fw-icon-text-text {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .fw-icon-text-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .fw-icon-text-grid {
+    grid-template-columns: 1fr;
+  }
+}
