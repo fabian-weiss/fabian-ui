@@ -108,8 +108,8 @@ document.addEventListener("DOMContentLoaded", () => {
     "fw-image-card-slider-2",
     "fw-image-card-slider-container-2"
   );
-  initializeImageCardSlider(
-    "fw-image-card-slider-3",
-    "fw-image-card-slider-container-3"
-  );
+  // initializeImageCardSlider(
+  //   "fw-image-card-slider-3",
+  //   "fw-image-card-slider-container-3"
+  // );
 });

@@ -64,7 +64,7 @@ function ImageCardSlider() {
         ref={sliderRef}
         className="fw-image-card-slider"
       >
-        <div className="fw-image-card-slider-entry flex-end">
+        <div className="fw-image-card fw-image-card-slider-entry flex-end">
           <img
             src="https://gravity.zenit.design/media/bf/18/18/1642143060/food-and-drinks.webp?ts=1717507216"
             alt="Grid Image"
@@ -76,7 +76,7 @@ function ImageCardSlider() {
             <div className="fw-btn fw-btn-light">Jetzt entdecken</div>
           </div>
         </div>
-        <div className="fw-image-card-slider-entry flex-start">
+        <div className="fw-image-card fw-image-card-slider-entry flex-start">
           <img
             src="https://gravity.zenit.design/media/bf/18/18/1642143060/food-and-drinks.webp?ts=1717507216"
             alt="Grid Image"
@@ -88,7 +88,7 @@ function ImageCardSlider() {
             <div className="fw-btn fw-btn-light">Jetzt entdecken</div>
           </div>
         </div>
-        <div className="fw-image-card-slider-entry flex-start">
+        <div className="fw-image-card fw-image-card-slider-entry flex-start">
           <img
             src="https://gravity.zenit.design/media/bf/18/18/1642143060/food-and-drinks.webp?ts=1717507216"
             alt="Grid Image"
@@ -100,7 +100,7 @@ function ImageCardSlider() {
             <div className="fw-btn fw-btn-light">Jetzt entdecken</div>
           </div>
         </div>
-        <div className="fw-image-card-slider-entry flex-start">
+        <div className="fw-image-card fw-image-card-slider-entry flex-start">
           <img
             src="https://gravity.zenit.design/media/bf/18/18/1642143060/food-and-drinks.webp?ts=1717507216"
             alt="Grid Image"
@@ -112,7 +112,7 @@ function ImageCardSlider() {
             <div className="fw-btn fw-btn-light">Jetzt entdecken</div>
           </div>
         </div>
-        <div className="fw-image-card-slider-entry flex-start">
+        <div className="fw-image-card fw-image-card-slider-entry flex-start">
           <img
             src="https://gravity.zenit.design/media/bf/18/18/1642143060/food-and-drinks.webp?ts=1717507216"
             alt="Grid Image"
@@ -124,7 +124,7 @@ function ImageCardSlider() {
             <div className="fw-btn fw-btn-light">Jetzt entdecken</div>
           </div>
         </div>
-        <div className="fw-image-card-slider-entry flex-start">
+        <div className="fw-image-card fw-image-card-slider-entry flex-start">
           <img
             src="https://gravity.zenit.design/media/bf/18/18/1642143060/food-and-drinks.webp?ts=1717507216"
             alt="Grid Image"
@@ -136,7 +136,7 @@ function ImageCardSlider() {
             <div className="fw-btn fw-btn-light">Jetzt entdecken</div>
           </div>
         </div>
-        <div className="fw-image-card-slider-entry flex-end">
+        <div className="fw-image-card fw-image-card-slider-entry flex-end">
           <img
             src="https://gravity.zenit.design/media/73/6c/76/1721736766/Gravity-Set-1-Banner-SM-3.webp?ts=1721736766"
             alt="Grid Image"
@@ -148,7 +148,7 @@ function ImageCardSlider() {
             <div className="fw-btn fw-btn-primary">Jetzt entdecken</div>
           </div>
         </div>
-        <div className="fw-image-card-slider-entry hover-opacity">
+        <div className="fw-image-card fw-image-card-slider-entry hover-opacity">
           <img
             src="https://gravity.zenit.design/media/73/6c/76/1721736766/Gravity-Set-1-Banner-SM-3.webp?ts=1721736766"
             alt="Grid Image"
