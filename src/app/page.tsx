@@ -2,8 +2,8 @@ import CategoryGrid from "@/components-created/category-list/CategoryGrid";
 import CategoryList from "@/components-created/category-list/CategoryList";
 import CtaBanner from "@/components-created/cta-banner/CtaBanner";
 import CtaRow from "@/components-created/cta-row/CtaRow";
+import DescriptionCardSlider from "@/components-created/description-card/description-card-slider/DescriptionCardSlider";
 import ImageCardGrid from "@/components-created/image-card/image-card-grid/ImageCardGrid";
-import ImageCardSlider from "@/components-created/image-card/image-card-slider/ImageCardSlider";
 import ImageGallery from "@/components-created/image-gallery/ImageGallery";
 import NavGrid from "@/components-created/nav-grid/NavGrid";
 import SectionContainer from "@/components-web/section-container/SectionContainer";
@@ -26,9 +26,9 @@ function Home() {
         <WrapperContainer widgetName="Image Card Grid">
           <ImageCardGrid />
         </WrapperContainer>
-        <WrapperContainer widgetName="Image Card Slider">
+        {/* <WrapperContainer widgetName="Image Card Slider">
           <ImageCardSlider />
-        </WrapperContainer>
+        </WrapperContainer> */}
         <WrapperContainer className="fw-w75" widgetName="Image Gallery">
           <ImageGallery />
         </WrapperContainer>
@@ -37,6 +37,9 @@ function Home() {
         </WrapperContainer>
         <WrapperContainer widgetName="CTA Row">
           <CtaRow />
+        </WrapperContainer>
+        <WrapperContainer widgetName="Description Card Slider">
+          <DescriptionCardSlider />
         </WrapperContainer>
       </SectionContainer>
     </>

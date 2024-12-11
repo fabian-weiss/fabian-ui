@@ -1,0 +1,95 @@
+.fw-description-card-slider-container {
+  position: relative;
+}
+
+.fw-description-card-slider {
+  display: flex;
+  overflow-x: auto;
+  gap: 40px;
+  scroll-snap-type: x mandatory; /* Horizontal snap */
+}
+
+.fw-description-card-slider-container:hover .fw-slider-btn-broad {
+  opacity: 1;
+}
+.fw-description-card-slider-container:hover .fw-slider-btn-broad.next {
+  right: -20px;
+}
+.fw-description-card-slider-container:hover .fw-slider-btn-broad.prev {
+  left: -20px;
+}
+
+.fw-description-card-slider-entry {
+  scroll-snap-align: start;
+  min-width: calc((100% - 80px) / 3);
+}
+
+.fw-slider-btn-wrapper {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  display: flex;
+  gap: 40px;
+  z-index: -1;
+  transition: all 0.2s ease;
+}
+
+.fw-slider-btn-broad {
+  position: absolute;
+  bottom: 50%;
+  height: 40px;
+  width: 40px;
+  padding: 10px;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  opacity: 1;
+  background-color: var(--zen-color-brand-primary);
+  z-index: 10;
+}
+
+.fw-slider-btn-broad:hover {
+  background-color: var(--zen-color-brand-primary);
+}
+
+.fw-slider-btn-broad.next {
+  right: -25px;
+  transform: translateY(50%);
+}
+
+.fw-slider-btn-broad.prev {
+  transform: translateY(50%) rotate(180deg);
+  left: -25px;
+}
+
+@media (max-width: 1100px) {
+  .fw-description-card-slider-entry {
+    min-width: calc((100% - 40px) / 2);
+  }
+}
+@media (max-width: 768px) {
+  .fw-description-card-slider-entry {
+    min-width: 100%;
+  }
+}
+
+/** Disable slider track bar */
+/* Hide scrollbar for WebKit browsers (Chrome, Safari, Edge) */
+.fw-description-card-slider::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.fw-description-card-slider {
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Ensure content still scrolls properly */
+.fw-description-card-slider {
+  -ms-overflow-style: none; /* Internet Explorer */
+  overflow-x: scroll;
+}
