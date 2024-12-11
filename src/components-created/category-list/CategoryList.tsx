@@ -5,7 +5,7 @@ import "./category-list.css";
 function CategoryList() {
   return (
     <div className="fw-nav-card-column">
-      <a href="/cats" className="fw-nav-card">
+      <a href="/cats" className="fw-nav-card hover-border">
         <div className="fw-nav-card-img-wrapper">
           <img
             src="https://gravity.zenit.design/media/bf/18/18/1642143060/food-and-drinks.webp?ts=1717507216"
@@ -25,7 +25,7 @@ function CategoryList() {
           <path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path>
         </svg>
       </a>
-      <a href="/cats" className="fw-nav-card">
+      <a href="/cats" className="fw-nav-card flex-center">
         <div className="fw-nav-card-img-wrapper">
           <img
             src="https://gravity.zenit.design/media/bf/18/18/1642143060/food-and-drinks.webp?ts=1717507216"
@@ -45,7 +45,7 @@ function CategoryList() {
           <path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path>
         </svg>
       </a>
-      <a href="/cats" className="fw-nav-card">
+      <a href="/cats" className="fw-nav-card scale-image">
         <div className="fw-nav-card-img-wrapper">
           <img
             src="https://gravity.zenit.design/media/bf/18/18/1642143060/food-and-drinks.webp?ts=1717507216"
@@ -65,7 +65,7 @@ function CategoryList() {
           <path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path>
         </svg>
       </a>
-      <a href="/cats" className="fw-nav-card">
+      <a href="/cats" className="fw-nav-card hover-border scale-image">
         <div className="fw-nav-card-img-wrapper">
           <img
             src="https://gravity.zenit.design/media/bf/18/18/1642143060/food-and-drinks.webp?ts=1717507216"

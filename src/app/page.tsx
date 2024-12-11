@@ -1,3 +1,4 @@
+import CategoryGrid from "@/components-created/category-list/CategoryGrid";
 import CategoryList from "@/components-created/category-list/CategoryList";
 import CtaBanner from "@/components-created/cta-banner/CtaBanner";
 import CtaRow from "@/components-created/cta-row/CtaRow";
@@ -13,8 +14,11 @@ function Home() {
   return (
     <>
       <SectionContainer categoryName="Nav Widgets">
-        <WrapperContainer widgetName="Nav Card">
+        <WrapperContainer widgetName="Category List">
           <CategoryList />
+        </WrapperContainer>
+        <WrapperContainer widgetName="Category Grid">
+          <CategoryGrid />
         </WrapperContainer>
         <WrapperContainer widgetName="Nav Grid">
           <NavGrid />

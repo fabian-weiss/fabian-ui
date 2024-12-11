@@ -1,0 +1,14 @@
+.fw-nav-grid-popular {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.fw-nav-grid-popular-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 36px;
+  background-color: #fff;
+}

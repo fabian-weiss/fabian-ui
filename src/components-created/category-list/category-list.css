@@ -1,9 +1,18 @@
+/** primary layout */
+/* column */
 .fw-nav-card-column {
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
+/* grid */
+.fw-nav-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
 
+/** nav card */
 .fw-nav-card {
   display: flex;
   flex-direction: row;
@@ -17,12 +26,16 @@
   transition: all 0.1s ease;
 }
 
-.fw-nav-card:hover {
+.fw-nav-card.flex-center {
+  justify-content: center;
+}
+
+.fw-nav-card.hover-border:hover {
   text-decoration: none !important;
   box-shadow: 0 0 0 1px #ffffff;
 }
 
-.fw-nav-card:hover .fw-nav-card-img {
+.fw-nav-card.scale-image:hover .fw-nav-card-img {
   transform: scale(1.1);
   transition: transform 0.8s ease;
 }
@@ -50,6 +63,17 @@
   color: var(--zen-text-color);
   text-decoration: none;
   padding-right: 30px;
+}
+
+.fw-nav-card-label.primary {
+  color: var(--zen-color-brand-primary);
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.fw-nav-card:hover .fw-nav-card-label.primary {
+  color: var(--zen-text-color);
+  transition: all 0.1s ease;
 }
 
 .fw-chevron-right {
