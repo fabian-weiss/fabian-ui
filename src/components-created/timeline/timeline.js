@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+function initTimeline() {
   // Initial setup for section height and position
   const progressLine = document.querySelector(".fw-timeline-progress-line");
   const sectionElement = document.querySelector(".fw-timeline-container");
@@ -35,4 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("beforeunload", () => {
     window.removeEventListener("scroll", handleScroll);
   });
+}
+document.addEventListener("DOMContentLoaded", function () {
+  initTimeline();
 });

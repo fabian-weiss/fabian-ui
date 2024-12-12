@@ -18,6 +18,36 @@ function DescriptionCardSlider() {
     } else return 3;
   };
 
+  const handleButtonVisibility = () => {
+    if (sliderRef.current == null) {
+      return;
+    }
+    const slider = sliderRef.current;
+    const numberOfSliderChildren = slider.children.length;
+    const scrollLeft = slider.scrollLeft;
+    const maxScrollLeft = slider.scrollWidth - slider.clientWidth;
+
+    const prevButton: HTMLDivElement | null = slider.querySelector(
+      `.fw-slider-btn-broad.prev`
+    );
+    const nextButton: HTMLDivElement | null = slider.querySelector(
+      ".fw-slider-btn-broad.next"
+    );
+
+    // If there are fewer slides than visible, hide buttons
+    if (prevButton && nextButton) {
+      if (numberOfSliderChildren <= visibleSlides()) {
+        prevButton.style.display = "none";
+        nextButton.style.display = "none";
+        return;
+      }
+
+      // Handle button visibility based on scroll position
+      prevButton.style.display = scrollLeft <= 0 ? "none" : "flex";
+      nextButton.style.display = scrollLeft >= maxScrollLeft ? "none" : "flex";
+    }
+  };
+
   const handleScroll = (forward: boolean) => {
     if (sliderRef.current != null) {
       const scrollLeft = sliderRef.current.scrollLeft;
@@ -39,6 +69,10 @@ function DescriptionCardSlider() {
         left: forward ? newScrollPos + itemWidth : newScrollPos - itemWidth,
         behavior: "smooth",
       });
+
+      setTimeout(() => {
+        handleButtonVisibility();
+      }, 300);
     }
   };
 
@@ -61,7 +95,10 @@ function DescriptionCardSlider() {
 
   useEffect(() => {
     resetInterval();
+    handleButtonVisibility();
+    window.addEventListener("resize", handleButtonVisibility);
     return () => {
+      window.removeEventListener("resize", handleButtonVisibility);
       if (intervalRef.current) {
         clearInterval(intervalRef.current);
       }
@@ -78,7 +115,7 @@ function DescriptionCardSlider() {
         <div className="fw-description-card fw-description-card-slider-entry">
           <div className="fw-description-card-content-wrapper">
             <img
-              src="https://gravity.zenit.design/media/bf/18/18/1642143060/food-and-drinks.webp?ts=1717507216"
+              src="https://cdn.shopware.store/U/x/n/4CzQg/media/e4/10/06/1734029869/huhn.webp?ts=1734029869"
               alt="Description Card Image"
               className="fw-description-card-image"
             />
@@ -94,7 +131,7 @@ function DescriptionCardSlider() {
             className="fw-description-card-label-row"
             onClick={() => handleShowDetails(0)}
           >
-            <span className="fw-description-card-label">Hunde</span>
+            <span className="fw-description-card-label">Ente</span>
             <svg
               className={`fw-description-card-icon ${
                 activeIndex === 0 ? "active" : ""
