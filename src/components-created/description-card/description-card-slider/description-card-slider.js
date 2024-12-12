@@ -103,9 +103,12 @@ function initializeDescriptionCardSlider(sliderId, sliderContainerId) {
     handleButtonVisibility();
   });
 
+  slider.addEventListener("scroll", () => {
+    handleButtonVisibility();
+  });
+
   window.addEventListener("scroll", () => {
     // Handle visibility of buttons
-    handleButtonVisibility();
     resetInterval();
   });
 
