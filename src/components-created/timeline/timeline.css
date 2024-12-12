@@ -32,7 +32,7 @@
 .fw-timeline-line {
   height: 100%;
   width: 2px;
-  background-color: #a3a3a3;
+  background-color: #f2f2f2;
   position: relative;
   z-index: -1;
 }
@@ -43,6 +43,7 @@
   left: 0;
   width: 2px;
   background-color: var(--zen-color-brand-primary);
+  transition: all 0.3 ease;
 }
 
 .fw-timeline-entry {
@@ -63,12 +64,13 @@
 .fw-timeline-year {
   width: max-content;
   aspect-ratio: 1;
-  padding: 10px;
+  padding: 18px;
   border-radius: 1000px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: var(--zen-color-brand-primary);
+  color: #fff;
   font-size: 32px;
 }
 
