@@ -93,7 +93,7 @@
 }
 
 .fw-nav-card:hover .fw-nav-card-label.primary {
-  color: var(--zen-text-color);
+  color: #ce2f15;
   transition: all 0.1s ease;
 }
 
