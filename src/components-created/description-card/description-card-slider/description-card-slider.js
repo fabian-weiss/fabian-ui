@@ -99,6 +99,8 @@ function initializeDescriptionCardSlider(sliderId, sliderContainerId) {
   });
 
   window.addEventListener("scroll", () => {
+    // Handle visibility of buttons
+    handleButtonVisibility();
     resetInterval();
   });
 
