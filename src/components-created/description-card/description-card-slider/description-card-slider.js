@@ -34,6 +34,8 @@ function initializeDescriptionCardSlider(sliderId, sliderContainerId) {
       return;
     }
 
+    console.log(`scrollLeft: ${scrollLeft}, maxScrollLeft: ${maxScrollLeft}`);
+
     // Handle button visibility based on scroll position
     prevButton.style.display = scrollLeft <= 0 ? "none" : "flex";
     nextButton.style.display = scrollLeft >= maxScrollLeft ? "none" : "flex";
