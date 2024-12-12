@@ -36,9 +36,12 @@ function initializeDescriptionCardSlider(sliderId, sliderContainerId) {
 
     console.log(`scrollLeft: ${scrollLeft}, maxScrollLeft: ${maxScrollLeft}`);
 
+    const offset = 50; // Offset to handle rounding errors
+
     // Handle button visibility based on scroll position
-    prevButton.style.display = scrollLeft <= 0 ? "none" : "flex";
-    nextButton.style.display = scrollLeft >= maxScrollLeft ? "none" : "flex";
+    prevButton.style.display = scrollLeft <= offset ? "none" : "flex";
+    nextButton.style.display =
+      scrollLeft >= maxScrollLeft - offset ? "none" : "flex";
   };
 
   // Function to handle scroll (forward or backward)
