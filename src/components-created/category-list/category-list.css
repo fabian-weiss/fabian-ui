@@ -116,3 +116,14 @@
     width: 2rem;
   }
 }
+
+@media (max-width: 480px) {
+  .fw-nav-card-label.primary {
+    font-size: 18px;
+  }
+
+  .fw-nav-card-img-wrapper.small {
+    height: 1.6rem;
+    width: 1.6rem;
+  }
+}

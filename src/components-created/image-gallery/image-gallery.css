@@ -47,12 +47,18 @@
   font-weight: 400;
   color: var(--zen-light-text-color);
 }
+.fw-image-gallery-entry__topline.fw-primary {
+  color: var(--zen-color-brand-primary);
+}
 
 .fw-image-gallery-entry__title {
   font-size: 28px;
   font-weight: 500;
   color: var(--zen-light-text-color);
   margin-bottom: 20px;
+}
+.fw-image-gallery-entry__title.fw-primary {
+  color: var(--zen-color-brand-primary);
 }
 
 .fw-image-gallery-indicators {
