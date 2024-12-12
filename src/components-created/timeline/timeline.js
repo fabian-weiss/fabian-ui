@@ -31,6 +31,12 @@ function initTimeline() {
   // Listen to scroll events
   window.addEventListener("scroll", handleScroll);
 
+  window.addEventListener("resize", () => {
+    sectionTop = sectionElement.getBoundingClientRect().top + window.scrollY;
+    sectionHeight = sectionElement.offsetHeight;
+    handleScroll();
+  });
+
   // Cleanup event listener when the page is unloaded
   window.addEventListener("beforeunload", () => {
     window.removeEventListener("scroll", handleScroll);
