@@ -8,14 +8,14 @@
 }
 
 .fw-description-card-content-wrapper {
-  width: auto;
+  width: 100%;
   height: 100%;
-  aspect-ratio: 1.5 / 1;
+  /* aspect-ratio: 1.5 / 1; */
   position: relative;
 }
 
 .fw-description-card-image {
-  height: auto;
+  height: 100%;
   width: 100%;
   object-fit: cover;
 }
