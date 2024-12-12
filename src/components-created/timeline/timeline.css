@@ -1,0 +1,120 @@
+.fw-timeline-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.fw-timeline-content-wrapper {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 150px;
+  min-height: 400px;
+}
+
+.fw-timeline-line-wrapper {
+  height: 100%;
+  position: absolute;
+  width: 30%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fw-timeline-line {
+  height: 100%;
+  width: 2px;
+  background-color: #a3a3a3;
+  position: relative;
+  z-index: -1;
+}
+
+.fw-timeline-progress-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  background-color: var(--zen-color-brand-primary);
+}
+
+.fw-timeline-entry {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.fw-timeline-year-container {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fw-timeline-year {
+  width: max-content;
+  aspect-ratio: 1;
+  padding: 10px;
+  border-radius: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--zen-color-brand-primary);
+  font-size: 32px;
+}
+
+.fw-timeline-entry-content-wrapper {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.fw-timeline-entry-image {
+  width: 100%;
+  max-width: 200px;
+  object-fit: contain;
+}
+
+.fw-timeline-entry-description {
+  text-align: center;
+  font-size: 22px;
+}
+
+@media (max-width: 768px) {
+  .fw-timeline-line-wrapper,
+  .fw-timeline-year-container {
+    width: 20%;
+  }
+  .fw-timeline-entry-content-wrapper {
+    width: 80%;
+  }
+  .fw-timeline-year {
+    font-size: 24px;
+    padding: 7px;
+  }
+  .fw-timeline-entry-image {
+    max-width: 180px;
+  }
+  .fw-timeline-entry-description {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .fw-timeline-entry-image {
+    max-width: 150px;
+  }
+}

@@ -7,6 +7,7 @@ import IconTextGrid from "@/components-created/icon-text-grid/IconTextGrid";
 import ImageCardGrid from "@/components-created/image-card/image-card-grid/ImageCardGrid";
 import ImageGallery from "@/components-created/image-gallery/ImageGallery";
 import NavGrid from "@/components-created/nav-grid/NavGrid";
+import Timeline from "@/components-created/timeline/Timeline";
 import SectionContainer from "@/components-web/section-container/SectionContainer";
 import WrapperContainer from "@/components-web/wrapper-container/WrapperContainer";
 import React from "react";
@@ -44,6 +45,9 @@ function Home() {
         </WrapperContainer>
         <WrapperContainer widgetName="Icon Text Grid">
           <IconTextGrid />
+        </WrapperContainer>
+        <WrapperContainer widgetName="Timeline">
+          <Timeline />
         </WrapperContainer>
       </SectionContainer>
     </>
