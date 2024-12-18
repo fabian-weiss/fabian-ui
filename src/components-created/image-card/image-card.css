@@ -36,7 +36,7 @@
 
 .fw-image-card__bg-image {
   height: 100%;
-  width: 60%;
+  width: 50%;
   object-fit: cover;
   position: absolute;
   top: 0;
@@ -52,6 +52,9 @@
   max-width: 75%;
   z-index: 1;
   color: #fff;
+  max-width: 60%;
+  width: 50%;
+  min-width: fit-content;
 }
 
 .fw-image-card__content.text-light {
@@ -78,7 +81,7 @@
   font-weight: 700;
 }
 
-@media (max-width: 1300px) {
+/* @media (max-width: 1300px) {
   .fw-image-card__bg-image {
     transform: translateX(-10%);
   }
@@ -96,6 +99,13 @@
 @media (max-width: 768px) {
   .fw-image-card__bg-image {
     transform: none;
+  }
+} */
+
+@media (max-width: 768px) {
+  .fw-image-card__content {
+    max-width: 50%;
+    width: 100%;
   }
 }
 @media (max-width: 480px) {

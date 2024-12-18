@@ -69,7 +69,7 @@ function ImageCardSlider() {
           className="fw-image-card fw-image-card-slider-entry flex-end"
         >
           <img
-            src="https://cdn.shopware.store/U/x/n/4CzQg/media/be/62/a0/1734525730/semi_moist_snack.png?ts=1734525730"
+            src="https://cdn.shopware.store/U/x/n/4CzQg/media/ee/f5/c1/1734528857/junior_large_breed_square.png?ts=1734528857"
             alt="Grid Image"
             className="fw-image-card__bg-image"
           />
