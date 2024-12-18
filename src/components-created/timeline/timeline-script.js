@@ -42,6 +42,7 @@ function initTimeline() {
     window.removeEventListener("scroll", handleScroll);
   });
 }
-document.addEventListener("DOMContentLoaded", function () {
+
+document.addEventListener("DOMContentLoaded", () => {
   initTimeline();
 });

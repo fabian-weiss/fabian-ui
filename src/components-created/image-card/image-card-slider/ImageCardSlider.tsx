@@ -49,7 +49,7 @@ function ImageCardSlider() {
   };
 
   useEffect(() => {
-    resetInterval();
+    // resetInterval();
     return () => {
       if (intervalRef.current) {
         clearInterval(intervalRef.current);
@@ -64,18 +64,21 @@ function ImageCardSlider() {
         ref={sliderRef}
         className="fw-image-card-slider"
       >
-        <div className="fw-image-card fw-image-card-slider-entry flex-end">
+        <a
+          href="#"
+          className="fw-image-card fw-image-card-slider-entry flex-end"
+        >
           <img
-            src="https://gravity.zenit.design/media/bf/18/18/1642143060/food-and-drinks.webp?ts=1717507216"
+            src="https://cdn.shopware.store/U/x/n/4CzQg/media/be/62/a0/1734525730/semi_moist_snack.png?ts=1734525730"
             alt="Grid Image"
             className="fw-image-card__bg-image"
           />
           <div className="fw-image-card__content text-light">
-            <span className="fw-image-card__topline">Hunde</span>
-            <h4 className="fw-image-card__title">Leckerlis</h4>
+            <span className="fw-image-card__topline">Calibra</span>
+            <h4 className="fw-image-card__title">Veterinary</h4>
             <div className="fw-btn fw-btn-light">Jetzt entdecken</div>
           </div>
-        </div>
+        </a>
         <div className="fw-image-card fw-image-card-slider-entry flex-start">
           <img
             src="https://gravity.zenit.design/media/bf/18/18/1642143060/food-and-drinks.webp?ts=1717507216"

@@ -20,11 +20,15 @@
 }
 
 .fw-btn.fw-btn-light:hover {
-  box-shadow: 0 0 0 2px #ffffff;
+  /* box-shadow: 0 0 0 2px #ffffff; */
+  background-color: #ce2f15;
+  box-shadow: 0 0 0 2px #ce2f15;
+  color: #ffffff;
 }
 
 .fw-btn.fw-btn-primary {
   background-color: var(--zen-color-brand-primary);
+
   color: #ffffff;
 }
 

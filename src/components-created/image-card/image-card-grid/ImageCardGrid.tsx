@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import "./image-card-grid.css";
+import "../image-card.css";
 
 function ImageCardGrid() {
   return (

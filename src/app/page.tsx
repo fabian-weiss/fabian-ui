@@ -4,7 +4,8 @@ import CtaBanner from "@/components-created/cta-banner/CtaBanner";
 import CtaRow from "@/components-created/cta-row/CtaRow";
 import DescriptionCardSlider from "@/components-created/description-card/description-card-slider/DescriptionCardSlider";
 import IconTextGrid from "@/components-created/icon-text-grid/IconTextGrid";
-import ImageCardGrid from "@/components-created/image-card/image-card-grid/ImageCardGrid";
+// import ImageCardGrid from "@/components-created/image-card/image-card-grid/ImageCardGrid";
+import ImageCardSlider from "@/components-created/image-card/image-card-slider/ImageCardSlider";
 import ImageGallery from "@/components-created/image-gallery/ImageGallery";
 import NavGrid from "@/components-created/nav-grid/NavGrid";
 import Timeline from "@/components-created/timeline/Timeline";
@@ -25,12 +26,12 @@ function Home() {
         <WrapperContainer widgetName="Nav Grid">
           <NavGrid />
         </WrapperContainer>
-        <WrapperContainer widgetName="Image Card Grid">
+        {/* <WrapperContainer widgetName="Image Card Grid">
           <ImageCardGrid />
-        </WrapperContainer>
-        {/* <WrapperContainer widgetName="Image Card Slider">
-          <ImageCardSlider />
         </WrapperContainer> */}
+        <WrapperContainer widgetName="Image Card Slider">
+          <ImageCardSlider />
+        </WrapperContainer>
         <WrapperContainer className="fw-w75" widgetName="Image Gallery">
           <ImageGallery />
         </WrapperContainer>

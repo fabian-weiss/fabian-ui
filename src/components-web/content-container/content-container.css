@@ -12,3 +12,9 @@
   font-weight: 600;
   margin-bottom: 8px;
 }
+
+@media (max-width: 480px) {
+  .fw-content-container {
+    padding: 30px;
+  }
+}
