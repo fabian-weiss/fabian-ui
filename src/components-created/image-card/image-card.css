@@ -45,6 +45,10 @@
   /* transform: translateX(-10%); */
 }
 
+.fw-image-card__bg-image.fw-full-width {
+  width: 100% !important;
+}
+
 .fw-image-card__content {
   display: flex;
   flex-direction: column;

@@ -83,7 +83,7 @@ function ImageCardSlider() {
           <img
             src="https://gravity.zenit.design/media/bf/18/18/1642143060/food-and-drinks.webp?ts=1717507216"
             alt="Grid Image"
-            className="fw-image-card__bg-image"
+            className="fw-image-card__bg-image fw-full-width"
           />
           <div className="fw-image-card__content text-dark">
             <span className="fw-image-card__topline">Katzen</span>
